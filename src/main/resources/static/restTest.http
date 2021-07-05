@@ -1,0 +1,31 @@
+
+###
+###
+#GET http://localhost:8080/api/item?id=99
+GET http://localhost:8080/
+Accept: application/json
+
+###
+GET http://localhost:8080/users
+Accept: application/json
+
+### search
+GET http://localhost:8080/users/2
+Accept: application/json
+
+
+### Post input Test
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "NewUser",
+  "joindate" : "2021-07-01T15:43:17.422+00:00"
+}
+
+
+### Post Delete Test
+
+DELETE http://localhost:8080/users/1
+Content-Type: application/json
