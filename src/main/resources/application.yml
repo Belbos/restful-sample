@@ -10,11 +10,22 @@ spring:
     basename: messages
   security:
     user:
-      name: init
-      password: init123!!
+      name: 1234
+      password: 12345
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:h2:mem:testdb
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
